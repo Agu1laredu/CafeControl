@@ -13,12 +13,12 @@ export default async function Home () {
     redirect('/login')
   }
 
-  const { data: post } = await supabase.from('post').select('*')
+  const { data: post } = await supabase.from('post').select('*, users(*)')
   // Con esta constante hacemos el llamado a la api de supabase
   // Lo guardamos en la variable post , le decimos que queremos datos de la columna nombrada post
   // y utilizamos select para llamar el tipo de datos que queremos , en este caso usamos  * para indicar que quremos todos ellos
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ width: '50%', margin: 'auto', textAlign: 'justify' }} >
+    <main className="Content flex min-h-screen flex-col items-center justify-between p-24" style={{ width: '50%', margin: 'auto', textAlign: 'justify' }} >
       <AuthButtonServer />
       {/* button para iniciar session con github */}
       <pre>{JSON.stringify(post, null, 2)}</pre>
