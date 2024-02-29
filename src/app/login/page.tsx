@@ -9,8 +9,6 @@ export default function Login () {
           <h1 className='text-xl font-bold mb-4'>Inicia sesión </h1>
           <div style={{ display: 'flex', margin: 'auto', justifyContent: 'center' }}>
             <AuthButtonServer />
-            <AuthButtonServer />
-            <AuthButtonServer />
           </div>
         </div>
       </section>
