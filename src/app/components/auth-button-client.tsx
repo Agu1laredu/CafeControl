@@ -52,7 +52,7 @@ export function AuthButton ({ session }: { session: Session | null }) {
               </div>
             </button>)
 
-          : <Button style={{ cursor: 'pointer' }} onClick={handleSignOut}>Cerrar sesión</Button>
+          : <button style={{ cursor: 'pointer' }} onClick={handleSignOut}>Cerrar sesión</button>
         // Sino devolveme este otro button , que tiene la funcion de cerrar sesion una vez iniciada la misma
       }
       {
