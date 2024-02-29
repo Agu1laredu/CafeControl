@@ -22,6 +22,7 @@ export default async function Home () {
       <AuthButtonServer />
       {/* button para iniciar session con github */}
       <pre>{JSON.stringify(post, null, 2)}</pre>
+      Hola gente
     </main>
   )
 }

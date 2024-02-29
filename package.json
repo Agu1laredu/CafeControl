@@ -12,19 +12,19 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
-    "@supabase/auth-helpers-nextjs": "^0.7.4",
+    "@supabase/auth-helpers-nextjs": "^0.9.0",
     "@supabase/auth-ui-react": "^0.4.7",
     "@supabase/auth-ui-shared": "^0.1.8",
-    "@supabase/supabase-js": "2.32.0",
+    "@supabase/supabase-js": "2.39.7",
     "@tabler/icons-react": "^2.47.0",
-    "@types/node": "20.5.0",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
-    "eslint-config-next": "13.4.16",
-    "framer-motion": "^10.18.0",
-    "next": "13.4.16",
-    "postcss": "8.4.27",
+    "@types/node": "20.11.24",
+    "@types/react": "18.2.61",
+    "@types/react-dom": "18.2.19",
+    "autoprefixer": "10.4.17",
+    "eslint-config-next": "14.1.0",
+    "framer-motion": "^11.0.8",
+    "next": "14.1.0",
+    "postcss": "8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -42,15 +42,15 @@
     "rules": {}
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "8.47.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "8.57.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "standard": "^17.1.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "tailwindcss": "3.4.1",
+    "typescript": "5.3.3"
   }
 }
