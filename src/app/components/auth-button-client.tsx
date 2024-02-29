@@ -67,7 +67,7 @@ export function AuthButton ({ session }: { session: Session | null }) {
                 </svg>
               </div>
             </button>)
-          : <button  onClick={handleSignOut}>Cerrar sesión</button>
+          : <button onClick={handleSignOut}>Cerrar sesión</button>
         // Sino devolveme este otro button , que tiene la funcion de cerrar sesion una vez iniciada la misma
       }
     </header >)
