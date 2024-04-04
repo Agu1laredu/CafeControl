@@ -1,19 +1,30 @@
-import { AuthButtonServer } from '@/app/components/auth-button-server'
+import { AuthButtonServer } from '@/app/components/auth-button-server';
+import Logo from '../Img/Logo.png';
+import Banner from '../Img/Aux1.png';
+import './page.login.css';
 
-export default function Login () {
+export default function Login() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1 style={{ fontSize: '100px' }}>Archived System</h1>
-      <section style={{ border: '2px solid white', width: '50%', margin: 'auto', marginTop: '10%', padding: '2%' }}>
-        <div className='place-content-center min-h-screen' style={{ margin: 'auto', textAlign: 'center' }} >
-          <h1 className='text-xl font-bold mb-4'>Inicia sesión </h1>
+    <div className='ContainerLogin'>
+      <section className='SectionUno'>
+      <h1 style={{ fontSize: '100px' }}>
+        <img src={Logo.src} alt="Logo" />  
+      </h1>
+      <form className='FormContainer'>
+      <button className="buttonInit">
+        <h3 >Iniciar sesión</h3>
+      </button>
+      <input type="text" placeholder='Email' />
+      <input type="password"  placeholder='Contraseña' />
+      </form>
           <div style={{ display: 'flex', margin: 'auto', justifyContent: 'center' }}>
             <AuthButtonServer />
           </div>
-        </div>
+      </section>
+      <section className='SectionDos'>
+      <img src={Banner.src} alt="Logo" className='Logo' />  
       </section>
     </div>
-  )
+  );
 }
-// este Button es el componente padre de buttons server y cliente con su logica de comportamiento ya implementadas
-// en page usamos este componente
+

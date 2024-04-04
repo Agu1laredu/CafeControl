@@ -1,27 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.SideBar {
+  background-color: #2980b9;
+  width: 10%;
+  height: 750px;
+  text-align: center;
+  padding: 1%;
+}
+.SideBar li {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 50px;
+  text-align: justify;
+  display: flex;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.SideBar section {
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Logo {
+  width: 100%;
+}
+.button-c {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #3498db;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.dashboardContent {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  width: 70%;
+  position: relative;
+  top: 90px;
+}
+
+.Search {
+  border: 2px solid black;
+  width: 30%;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Avatar {
+  position: relative;
+  left: 50%;
 }
