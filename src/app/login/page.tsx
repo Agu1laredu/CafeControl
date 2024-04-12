@@ -14,8 +14,8 @@ export default function Login() {
       <button className="buttonInit">
         <h3 >Iniciar sesión</h3>
       </button>
-      <input type="text" placeholder='Email' />
-      <input type="password"  placeholder='Contraseña' />
+      <input type="email" placeholder='Email' autoComplete='username' />
+      <input type="password"  placeholder='Contraseña' autoComplete='current-password' />
       </form>
           <div style={{ display: 'flex', margin: 'auto', justifyContent: 'center' }}>
             <AuthButtonServer />
