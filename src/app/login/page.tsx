@@ -3,7 +3,10 @@ import Logo from '../Img/Logo.png';
 import Banner from '../Img/Aux1.png';
 import './page.login.css';
 
-export default function Login() {
+
+export default async function  Login()  {
+ 
+
   return (
     <div className='ContainerLogin'>
       <section className='SectionUno'>

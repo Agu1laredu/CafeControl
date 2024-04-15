@@ -1,8 +1,6 @@
-# Clon de Next  (Ex Twitter)
+# CAfe Control 
 
 - Este proyecto esta hecho con Next.js y supabase 
 
 #  Cuenta con :
 - inicio de sesion con providers 
-- Posteos de tweets 
-- UI identica 
