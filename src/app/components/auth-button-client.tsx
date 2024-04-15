@@ -11,7 +11,7 @@ export function AuthButton ({ session }: { session: Session | null }) {
     await supabase.auth.signInWithOAuth({
       provider: 'github',
       options: {
-       redirectTo: 'http://localhost:3000/auth/callback'
+       redirectTo: 'https://cafecontro.vercel.app/auth/callback'
         // Redireccion al inicio y obtencion de los datos cuando inicias sesion
         // sin esto quedaria en el login por mas que si haya iniciado sesion en el servidor
       }

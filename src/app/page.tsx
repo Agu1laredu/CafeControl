@@ -1,21 +1,26 @@
 import { RxAvatar } from "react-icons/rx";
-import { redirect } from 'next/navigation'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
-import { cookies } from 'next/headers'
-import SideBar from '../sideBar/sidebar'
+import { cookies } from "next/headers";
+import { AuthButtonServer } from "./components/auth-button-server";
+import { redirect } from "next/navigation";
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
-export default async function SidebarComponent () {
+import { AiTwotoneHome } from "react-icons/ai";
+import { FaMoneyCheckDollar } from "react-icons/fa6";
+import { MdInventory } from "react-icons/md";
+import { TbReportSearch } from "react-icons/tb";
 
+import Logo from '../app/Img/Logo.png'
+
+export default async function Home () {
+ 
   const supabase = createServerComponentClient({ cookies })
   const { data: { session } } = await supabase.auth.getSession()
-  
-  // getSession es un hook de supabase para verificar el inicio de session
-  // el cual guardamos en la constante session
-  if (session === null) {
-      // en este if hacemos la verificacion del inicio de session, si es nulo
-      // redirigimos al componente login negando el accedo a los datos del usuario
-      redirect('/login')
-  } 
+
+  if  ( session  === null ) {
+    redirect('/login')
+  }
+
+
   return (
     <main  className="Content flex min-h-screen flex-col items-center justify-between p-24" > 
      <section className='dashboardContent'>
@@ -24,7 +29,27 @@ export default async function SidebarComponent () {
       <RxAvatar style={{fontSize: '40px', cursor: 'pointer'}}/>
       </div> 
       </section>
-      < SideBar />
+      <div className='SideBar' >
+            <img src={Logo.src} alt="Logo" className='Logo' />
+            <section>
+                <li >
+                    <AiTwotoneHome />
+                    INICIO
+                </li>
+                <li>
+                    <FaMoneyCheckDollar />
+                    FACTURACIÓN
+                </li>
+                <li>
+                    <MdInventory />
+                    INVENTARIO
+                </li>
+                <li>
+                    <TbReportSearch />
+                    REPORTES</li>
+            </section>
+            <AuthButtonServer />
+        </div>
       {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </main>
   )
