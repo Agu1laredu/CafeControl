@@ -31,8 +31,8 @@ export default async function Home () {
       </section>
       <div className='SideBar' >
             <img src={Logo.src} alt="Logo" className='Logo' />
-            <section>
-                <li >
+            <section className="w-4 bg-black border">
+                <li  className="text-3xl font-bold underline">
                     <AiTwotoneHome />
                     INICIO
                 </li>
