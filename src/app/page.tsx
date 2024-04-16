@@ -22,12 +22,12 @@ export default async function Home() {
 
   return (
     <main className="Content flex flex-col lg:flex-row min-h-screen items-center lg:items-stretch justify-between p-4 lg:p-24">
-      <section className="dashboardContent w-full max-w-3xl lg:flex-grow lg:order-2">
-        <input className="Search p-2 rounded-md border border-gray-300" type="text" placeholder="Buscar" />
-        <div className="Avatar mt-4">
-          <RxAvatar style={{ fontSize: '40px', cursor: 'pointer' }} />
-        </div>
-      </section>
+     <section className="dashboardContent flex h-10 lg:flex-grow lg:order-2">
+    <input className="Search p-2 w-full ml-80 mr-80   rounded-md border  border-gray-300" type="text" placeholder="Buscar" />
+    <div className="self-end">
+      <RxAvatar style={{ fontSize: '40px', cursor: 'pointer' }} />
+    </div>
+  </section>
       <div className="lg:w-64 lg:flex-none lg:order-1">
         <div className="h-full flex flex-col bg-blue-600 border-r text-white">
           <div className="flex items-center justify-between px-4 py-6">
