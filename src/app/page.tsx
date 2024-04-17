@@ -1,3 +1,4 @@
+
 import { cookies } from "next/headers";
 import { AuthButtonServer } from "./components/auth-button-server";
 import { redirect } from "next/navigation";
@@ -9,6 +10,8 @@ import { MdInventory } from "react-icons/md";
 import { TbReportSearch } from "react-icons/tb";
 
 import Logo from '../app/Img/Logo.png'
+import Graficos from './components/Charts/charts'
+import GraficoMove from './components/Charts/chartsMov'
 
 export default async function Home() {
 
@@ -22,12 +25,29 @@ export default async function Home() {
 
   return (
     <main className="Content flex flex-col lg:flex-row min-h-screen items-center lg:items-stretch justify-between p-4 lg:p-24">
-     <section className="dashboardContent flex h-10 lg:flex-grow lg:order-2">
-    <input className="Search p-2 w-full ml-80 mr-80   rounded-md border  border-gray-300" type="text" placeholder="Buscar" />
-    <div className="self-end">
-      <RxAvatar style={{ fontSize: '40px', cursor: 'pointer' }} />
-    </div>
-  </section>
+      <section className="dashboardContent flex h-10 lg:flex-grow lg:order-2">
+        <input className="Search p-2 w-full ml-80 mr-80 rounded-md border border-gray-300" type="text" placeholder="Buscar" />
+        <div className="self-end">
+          <RxAvatar style={{ fontSize: '40px', cursor: 'pointer' }} />
+        </div>
+      </section>
+
+
+
+      <div className="flex justify-center items-center lg:order-2  h-3/4 lg:h-full mt-40">
+        <div className="flex justify-center  items-center mt-80">
+          <Graficos />
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center lg:order-2  h-3/4 lg:h-full mt-40">
+        <div className="flex justify-center  items-center mt-80">
+          <GraficoMove />
+        </div>
+      </div>
+
+
+
       <div className="lg:w-64 lg:flex-none lg:order-1">
         <div className="h-full flex flex-col bg-blue-600 border-r text-white">
           <div className="flex items-center justify-between px-4 py-6">
@@ -71,7 +91,8 @@ export default async function Home() {
         </div>
       </div>
     </main>
+
   )
-{/* <pre>{JSON.stringify(post, null, 2)}</pre> */ }
+  {/* <pre>{JSON.stringify(post, null, 2)}</pre> */ }
 }
 

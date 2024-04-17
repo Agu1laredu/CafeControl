@@ -182,6 +182,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@kurkle/color@^0.3.0":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@kurkle/color/-/color-0.3.2.tgz#5acd38242e8bde4f9986e7913c8fdf49d3aa199f"
+  integrity sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==
+
 "@next/env@14.1.0":
   version "14.1.0"
   resolved "https://registry.npmjs.org/@next/env/-/env-14.1.0.tgz#43d92ebb53bc0ae43dcc64fb4d418f8f17d7a341"
@@ -2506,6 +2511,13 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chart.js@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.npmjs.org/chart.js/-/chart.js-4.4.2.tgz#95962fa6430828ed325a480cc2d5f2b4e385ac31"
+  integrity sha512-6GD7iKwFpP5kbSD4MeRRRlTnQvxfQREy36uEtm1hzHzcOqwWx0YEHuspuoNlslu+nciLIB7fjjsHkUv/FzFcOg==
+  dependencies:
+    "@kurkle/color" "^0.3.0"
+
 chokidar@^3.5.3:
   version "3.6.0"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz#197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b"
@@ -4311,10 +4323,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-primereact@^10.5.3:
-  version "10.5.3"
-  resolved "https://registry.npmjs.org/primereact/-/primereact-10.5.3.tgz#98a54415338a6ea91cdec81b3353c2ee37c80d16"
-  integrity sha512-uKfGU6jWdDnTOnfAj9IjbRuzJVtFqzbgZVSVe5OgxVVxT6JoImF28uj/iQlFJJs17WHi1SWtOmXTjSBqtL8fUg==
+primereact@^10.6.3:
+  version "10.6.3"
+  resolved "https://registry.npmjs.org/primereact/-/primereact-10.6.3.tgz#a7feed961daf83f875834cc6f4ce25b1df335788"
+  integrity sha512-1jCg81ebdmTGS5+1mbqNOLxTBD1Bcg9YqInrlghz9l2/akRIoSB9krnXEi14h8h/X4CH4EdAEHs0FF3Lj+IO8w==
   dependencies:
     "@types/react-transition-group" "^4.4.1"
     react-transition-group "^4.4.1"
