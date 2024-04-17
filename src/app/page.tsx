@@ -12,7 +12,7 @@ import { TbReportSearch } from "react-icons/tb";
 import Logo from '../app/Img/Logo.png'
 import Graficos from './components/Charts/charts'
 import GraficoMove from './components/Charts/chartsMov'
-import Toolbar from './components/Toolbar/toolbar'
+import Avatar from './components/Avatar/avatar'
 
 export default async function Home() {
 
@@ -29,7 +29,7 @@ export default async function Home() {
       <section className="dashboardContent flex h-10 lg:flex-grow lg:order-2">
         <input className="Search p-2 w-full ml-80 mr-80 rounded-md border border-gray-300" type="text" placeholder="Buscar" />
         <div className="self-end w-full">
-          <Toolbar />
+          <Avatar />
         </div>
       </section>
 
