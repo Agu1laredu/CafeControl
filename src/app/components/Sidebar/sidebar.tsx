@@ -38,7 +38,7 @@ export default function Sidebar() {
                     </Link>
                 </ul>
             </nav>
-            <div className="p-4">
+            <div className="p-4 mt-80">
                 <AuthButtonServer />
             </div>
         </div>
