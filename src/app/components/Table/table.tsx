@@ -36,15 +36,15 @@ const CommentsList: React.FC = () => {
 
     return (
         <div>
-            <b className='mb-4'>RESEÑAS</b>
+            <b className='mb-4'>Tareas completadas</b>
             <ul>
                 {comments.map(comment => (
                     <section key={comment.name} className="border border-green-500 rounded p-4 mb-4">
                         <div className="flex items-center mb-2">
                             <div className="h-4 w-4 rounded-full bg-green-500 mr-2"></div> {/* Viñeta */}
-                            <h3 className="text-xl font-semibold">{comment.name}</h3>
+                            <h3 className="text-xl font-semibold">{comment.content}</h3>
                         </div>
-                        <p className="text-gray-800">{comment.content}</p>
+                        <p className="text-gray-800 px-6">{comment.name}</p>
                     </section>
 
                 ))}
