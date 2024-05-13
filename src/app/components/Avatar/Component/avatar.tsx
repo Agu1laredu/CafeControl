@@ -13,23 +13,32 @@ import { BsEmojiLaughingFill } from "react-icons/bs";
 export default function WithoutModalDemo() {
     const [visible, setVisible] = useState<boolean>(false);
 
+    const handleToggleModal = () => {
+        switch (visible) {
+            case true:
+                setVisible(false);
+                break;
+            case false:
+                setVisible(true);
+                break;
+            default:
+                setVisible(true);
+                break;
+        }
+    };
 
     return (
         <div className="card flex justify-content-center">
-            <Button icon="pi pi-external-link" onClick={() => setVisible(true)}>
-                <div className="flex align-items-center  bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full cursor-pointer  ">
-                    <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" shape="circle" />
-                    <span className="font-bold text-bluegray-50 ml-4">Mariela Saez</span>
+            <Button icon="pi pi-external-link" onClick={handleToggleModal}>
+                <div className="flex align-items-center  bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-5 cursor-pointer  ">
+                    <Avatar image="https://png.pngtree.com/png-vector/20240205/ourmid/pngtree-user-avatar-silhouette-png-image_11626619.png" shape="circle" />
+                    <span className="font-bold text-bluegray-50 ml-4">Usuario</span>
                 </div>
             </Button>
-            <Dialog className="flex align-items-center  bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-5 cursor-pointer" visible={visible} modal={false} style={{ width: '50%' }} onHide={() => setVisible(false)}>
+            <Dialog className="flex align-items-center  bg-blue-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-5 cursor-pointer" visible={visible} modal={false} style={{ width: '50%' }} onHide={handleToggleModal}>
                 <div className="  ">
                     <nav className="flex-1 overflow-y-auto">
                         <ul className="p-2 space-y-2">
-                            {/* <Link className="font-bold flex items-center pl-4 py-2 text-base hover:bg-blue-700 cursor-pointer" href={""}>
-                                <AiTwotoneHome className="w-5 h-5 mr-3" />
-                                <span>INICIO</span>
-                            </Link> */}
                             <Link href="/">
                                 <li className="font-bold flex items-center pl-4 py-2 text-base hover:bg-blue-700 cursor-pointer">
                                     <BsEmojiLaughingFill className="w-5 h-5 mr-3" />
